@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <button onclick="alert( 'Addition ' +fnumber+ ' + ' +snumber+ ' = ' + add)">+</button>
+    <button onclick="alert( 'Subtarction ' +fnumber+ ' - ' +snumber+ ' = ' + sub)">-</button>
+    <button onclick="alert( 'Multiplication ' +fnumber+ ' * ' +snumber+ ' = ' + mul)">*</button>
+    <button onclick="alert( 'Divide ' +fnumber+ ' / ' +snumber+ ' = ' + div)">/</button>
+    <button onclick="alert( 'Modulus ' +fnumber+ ' % ' +snumber+ ' = '+ mod)">%</button>
+    <button onclick="alert( 'Exponential ' +fnumber+ ' + ' +snumber+ ' = ' + exp)">**</button>
+    <button onclick="alert( 'Result: ' +fnumber+ ' == ' +snumber+ ' = ' +a)">==</button>
+    <button onclick="alert( 'Result: ' +fnumber+ ' === ' +snumber+ ' = ' +b)">===</button>
+    <button onclick="alert( 'Result: ' +fnumber+ ' != ' +snumber+ ' = ' +c)">!=</button>
+    <button onclick="alert( 'Result: ' +fnumber+ ' !== ' +snumber+ ' = ' +d)">!==</button>
+    <button onclick="alert( 'Result: ' +fnumber+ ' < ' +snumber+ ' = ' +e)"> Less Than</button>
+    <button onclick="alert( 'Result: ' +fnumber+ ' > ' +snumber+ ' = ' +e)"> Greter Than</button>
+
+    <script>
+        let fnumber = parseFloat(prompt('Enter A First Number'));
+
+        // let oprator = prompt('Enter oprators + - * / % **');
+        let snumber = parseFloat(prompt('Enter A Second Number'));
+
+        let add = fnumber + snumber;
+        let sub = fnumber - snumber;
+        let mul = fnumber * snumber;
+        let div = fnumber / snumber;
+        let mod = fnumber % snumber;
+        let exp = fnumber ** snumber;
+        let a = fnumber == snumber;
+        let b = fnumber === snumber;
+        let c = fnumber != snumber;
+        let d = fnumber !== snumber;
+        let e = fnumber < snumber;
+        let f = fnumber > snumber;
+
+        //Logical Oprators
+
+        alert('AND: ' + fnumber >= 18 && snumber <= 18);
+        alert('OR: ' + fnumber >= 18 || snumber <= 18);
+        alert('NOT: ' + fnumber >= 18 != snumber <= 18);
+
+        //Ternary Oprator
+        let age = 18;
+        let vote = (age >= 18) ? "You Can vote" : "Not Allowed";
+        alert(vote);
+
+        //Assignment
+        let total = fnumber += snumber;
+        let total1 = fnumber -= snumber;
+        let total2 = fnumber /= snumber;
+        let total3 = fnumber %= snumber;
+        let total4 = fnumber *= snumber;
+        alert(total);
+        alert(total1);
+        alert(total2);
+        alert(total3);
+        alert(total4);
+
+
+        //typeof
+        let user;
+        console.log(user ?? "Hello Vannamma N A")
+
+        let name = AV;
+        console.log(name ?? "Hello Vannamma N A")
+
+
+        //Unary
+        console.log(fnumber++)
+        console.log(++fnumber)
+        console.log(--fnumber)
+        console.log(fnumber--)
+
+
+
+    </script>
+
+</body>
+
+</html>
